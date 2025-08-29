@@ -1,0 +1,80 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #2E1B4D, #7D5DAF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo-header {
+    height: 40px;
+    border-radius: 8px;
+}
+
+.logo-corinthians {
+    max-height: 120px;
+    border-radius: 12px;
+}
+
+.titulo-header {
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #C49A6C;
+}
+
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+    display: block;
+}
+
+.table-container thead,
+.table-container tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-container thead {
+    width: calc(100% - 1em);
+    position: sticky;
+    top: 0;
+    background-color: #2E1B4D;
+    z-index: 10;
+}
+
+.table {
+    background-color: #2E1B4D;
+}
+
+.btn {
+    background-color: #C49A6C;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #7D5DAF;
+    color: #FFFFFF;
+}
+
+.rodape-branco {
+    color: #FFFFFF !important;
+    border-top-color: #7D5DAF !important;
+}

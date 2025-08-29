@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar Mensagem - MovSCCPFeminino</title>
+  <link rel="icon" href="assets/img/movsccpfem.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+
+  <header class="d-flex align-items-center justify-content-center gap-2 p-3">
+    <img src="assets/img/movsccpfem.jpg" alt="MovSCCPFeminino" class="logo-header">
+    <span class="titulo-header">MovSCCPFeminino | Fiel Fazendinha - Torcida do Futebol Feminino do
+      Corinthians</span>
+  </header>
+
+  <div class="container py-5 text-white">
+    <div class="text-center mb-4">
+      <img src="assets/img/corinthians.jpg" alt="Corinthians" class="img-fluid" style="max-height:150px;">
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="mb-4 text-center">Envie sua mensagem para as atletas</h2>
+
+        <form id="formMensagem">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome (opcional)</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+          </div>
+
+          <div class="mb-3">
+            <label for="estado" class="form-label">Estado</label>
+            <select class="form-select" id="estado">
+              <option value="">Selecione o estado</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="cidade" class="form-label">Cidade</label>
+            <select class="form-select" id="cidade">
+              <option value="">Selecione o estado primeiro</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="5" maxlength="400"
+              placeholder="Digite sua mensagem (máx 400 caracteres)"></textarea>
+            <div class="text-end mt-1">
+              <small id="contador">0/400</small>
+            </div>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-warning text-dark">Enviar Mensagem</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-5 py-3 border-top text-center text-white small">
+    © 2025 - MovSCCPFeminino. Todos os direitos reservados.<br>
+    Desenvolvido por Erica Viana. Agosto/2025
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+/* ====== Estilo geral do body ====== */
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+/* ====== Header ====== */
+header {
+  background: linear-gradient(135deg, #2E1B4D, #7D5DAF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo-header {
+  height: 40px;
+  /* ajustado para alinhar com o texto */
+  border-radius: 8px;
+}
+
+.titulo-header {
+  font-size: 1.5rem;
+  line-height: 40px;
+  /* alinhamento vertical com o logo */
+  text-align: center;
+}
+
+/* ====== Imagem central ====== */
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-corinthians {
+  max-width: 200px;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ====== Botões ====== */
+.btn {
+  background-color: #C49A6C;
+  /* dourado */
+  color: #000000;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #7D5DAF;
+  /* roxo claro */
+  color: #FFFFFF;
+}
+
+/* ====== Container dos botões ====== */
+.d-grid {
+  display: grid;
+  gap: 1rem;
+  max-width: 300px;
+  margin: auto;
+}
+
+/* ====== Rodapé ====== */
+.rodape-branco {
+  color: #FFFFFF !important;
+  border-top-color: #7D5DAF !important;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}

@@ -1,0 +1,145 @@
+/* ====== Estilo geral do body ====== */
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+/* ====== Header ====== */
+header {
+  width: 100%;
+  /* ocupa toda a largura da página */
+  background: linear-gradient(135deg, #2E1B4D, #7D5DAF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* espaçamento entre logo e título */
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  /* garante que padding não quebre layout */
+}
+
+header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-header {
+  height: 40px;
+  border-radius: 8px;
+}
+
+.titulo-header {
+  font-size: 1.4rem;
+  line-height: 35px;
+  white-space: nowrap;
+  /* frase inteira na mesma linha */
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ====== Imagem central ====== */
+.logo-corinthians {
+  max-width: 200px;
+  margin: 50px auto 30px auto;
+  display: block;
+}
+
+/* ====== Caixa de agradecimento ====== */
+.agradecimento-box {
+  background-color: #1a1a1a;
+  /* fundo escuro */
+  max-width: 600px;
+  width: 90%;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(255, 205, 0, 0.3);
+  margin-bottom: 50px;
+}
+
+.agradecimento-box h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffcd00;
+  /* dourado Corinthians */
+  margin-bottom: 20px;
+}
+
+.agradecimento-box p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* ====== Botão voltar ====== */
+.agradecimento-box .btn {
+  background-color: #C49A6C;
+  /* dourado */
+  color: #000;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.agradecimento-box .btn:hover {
+  background-color: #7D5DAF;
+  /* roxo claro */
+  color: #FFFFFF;
+}
+
+/* ====== Rodapé ====== */
+.rodape-branco {
+  color: #FFFFFF !important;
+  border-top: 1px solid #7D5DAF !important;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 600px) {
+  .agradecimento-box {
+    padding: 20px 15px;
+  }
+
+  .agradecimento-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .agradecimento-box p {
+    font-size: 1rem;
+  }
+
+  .logo-corinthians {
+    max-width: 150px;
+    margin: 30px auto 20px auto;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+
+  .titulo-header {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+}

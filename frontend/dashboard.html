@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MovSCCPFeminino</title>
+    <link rel="icon" href="assets/img/movsccpfem.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <header class="d-flex align-items-center justify-content-center gap-2 p-3">
+        <img src="assets/img/movsccpfem.jpg" alt="MovSCCPFeminino" class="logo-header">
+        <span class="titulo-header">MovSCCPFeminino | Fiel Fazendinha - Dashboard Administrativo</span>
+    </header>
+
+    <main class="container mt-5">
+        <!-- Logos e totalizadores -->
+        <div class="text-center mb-4">
+            <img src="assets/img/corinthians.jpg" alt="Corinthians" class="logo-corinthians mb-3">
+        </div>
+
+        <div class="row text-center mb-4">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white p-3 rounded">
+                    <h5>Total de Mensagens</h5>
+                    <span id="totalMensagens" class="fs-4">0</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white p-3 rounded">
+                    <h5>Cidades Diferentes</h5>
+                    <span id="totalCidades" class="fs-4">0</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white p-3 rounded">
+                    <h5>Mensagens do Exterior</h5>
+                    <span id="totalExterior" class="fs-4">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gráficos -->
+        <div class="row mb-4">
+            <div class="col-md-6 mb-3">
+                <h5>Mensagens por Estado</h5>
+                <canvas id="graficoEstados"></canvas>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h5>Nuvem de Cidades</h5>
+                <div id="nuvemCidades" class="p-2 border rounded bg-dark" style="height:250px; overflow:auto;"></div>
+            </div>
+        </div>
+
+        <!-- Lista de mensagens -->
+        <div class="mb-3">
+            <h5>Mensagens Recebidas</h5>
+            <div class="table-container">
+                <table class="table table-dark table-striped" id="mensagensTable">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Cidade</th>
+                            <th>Estado</th>
+                            <th>Mensagem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Mensagens carregadas pelo JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button id="exportPDF" class="btn mt-3">Exportar PDF</button>
+        </div>
+    </main>
+
+    <footer class="mt-5 py-3 border-top text-center small rodape-branco">
+        © 2025 - MovSCCPFeminino. Todos os direitos reservados.<br>
+        Desenvolvido por Erica Viana. Agosto/2025
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/dashboard.js" type="module"></script>
+</body>
+
+</html>
